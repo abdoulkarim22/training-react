@@ -1,13 +1,13 @@
-import React, { Component } from 'react'
 
-export class ChildComponent extends Component {
+import React from 'react';
 
-    
-  render() {
-    return (
-      <div>ChildComponent</div>
-    )
-  }
-}
+const ChildComponent = (props) => {
+  return (
+    <div>
+      <p> le composant enfant</p>
+      <p>{props.data}</p>
+    </div>
+  );
+};
 
-export default ChildComponent
+export default ChildComponent;

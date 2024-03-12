@@ -1,10 +1,10 @@
  import React from 'react'
 
- const Button = ({text}) =>{
+ const Button = ({data}) =>{
 
  return (
      <>
-       <button>{text}</button> 
+       <button>{data}</button> 
      </>
  )
  }

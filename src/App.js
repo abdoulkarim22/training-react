@@ -1,11 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import Button from './components/button/Button';
+import ParentComponent from './components/ParentComponent';
 function App() {
   return (
     <div className="App">
-    <Button text ={'Acheter'}/>
-    <Button text ={'Vendre'} />
+    <ParentComponent/>
     </div>
   );
 }
