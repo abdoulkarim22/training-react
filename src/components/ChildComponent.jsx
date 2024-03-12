@@ -6,6 +6,8 @@ const ChildComponent = (props) => {
     <div>
       <p> le composant enfant</p>
       <p>{props.data}</p>
+        {props.children}
+         
     </div>
   );
 };
