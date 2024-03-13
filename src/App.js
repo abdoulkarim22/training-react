@@ -4,10 +4,11 @@ import ParentComponent from './components/ParentComponent';
 import Counter from './components/Counter';
 import LoginForm from './components/LoginForm';
 import Page from './components/Page';
+import ProfilePage from './components/ProfilePage';
 function App() {
   return (
     <div className="App">
-      <Page/>
+     <ProfilePage/>
     </div>
   );
 }
