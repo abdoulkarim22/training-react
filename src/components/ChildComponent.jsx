@@ -1,18 +1,24 @@
+import React, { Component } from 'react'
 
-import React from 'react';
+export class ChildComponent extends Component {
+  render() {
+    return (
+      <>
 
-const ChildComponent = (props) => {
 
-
-    const {handleClick}  = props;
-  return (
-    <div>
       <p> le composant enfant</p>
-      <p>{props.data}</p>
-        {props.children}
-         <button onClick={handleClick} > click Me</button>
-    </div>
-  );
-};
+       <p>{this.props.data}</p>
+        {this.props.children}
+        <button onClick={this.props.handleClick}>Cliquez-moi</button>
 
-export default ChildComponent;
+      </>
+    )
+  }
+
+  handleClick = () => {
+    // Appel de la fonction handleClick passée en tant que prop
+    this.props.handleClick();
+  }
+}
+
+export default ChildComponent

@@ -1,12 +1,10 @@
- import React from 'react'
+// Button.js
+import React from 'react';
 
- const Button = ({title}) =>{
+function Button(props) {
+  return (
+    <button onClick={props.handleClick}>{props.title}</button>
+  );
+}
 
- return (
-     <>
-       <button>{title}</button> 
-     </>
- )
- }
- export default Button;
-
+export default Button;
