@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 
 const LoginForm = () => {
+
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+
+  const [getdonnees, setData] = useState(null);
 
   const handleUsernameChange = (event) => {
     setUsername(event.target.value);
@@ -17,7 +20,18 @@ const LoginForm = () => {
 
     console.log('Nom d\'utilisateur:', username);
     console.log('Mot de passe:', password);
+
+    const data = {
+        name: username,
+        password: password
+    }
+    setData(data);
+    setUsername('');
+    setPassword('');
   };
+
+
+
 
   return (
     <form onSubmit={handleSubmit}>
@@ -44,6 +58,13 @@ const LoginForm = () => {
             <p>Valeur du mot de passe en temps réel : {password}</p>
       </div>
       <button type="submit">Se connecter</button>
+
+      {getdonnees && (  <div> 
+         <h2>Données soumises </h2> 
+         <p>Nom d'utilisateur : {getdonnees.username}</p>
+         <p>Mot de passe : {getdonnees.password}</p> 
+        
+        </div>)}
     </form>
   );
 };
