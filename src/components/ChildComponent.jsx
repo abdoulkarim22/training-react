@@ -16,7 +16,6 @@ export class ChildComponent extends Component {
   }
 
   handleClick = () => {
-    // Appel de la fonction handleClick passée en tant que prop
     this.props.handleClick();
   }
 }

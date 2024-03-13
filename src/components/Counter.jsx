@@ -1,4 +1,4 @@
-// Counter.js
+
 import React, { useState } from 'react';
 import Button from '../components/button/Button';
 
@@ -16,7 +16,7 @@ function Counter() {
   return (
     <>
       <p>{compteur}</p>
-      {/* Utilisation du composant Button pour les boutons d'incrémentation et de décrémentation */}
+    
       <Button title="incrémentation" handleClick={incrémentation} />
       <Button title="décrémentation" handleClick={décrémentation} />
     </>
