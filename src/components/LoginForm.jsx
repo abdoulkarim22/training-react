@@ -30,6 +30,7 @@ const LoginForm = () => {
           onChange={handleUsernameChange}
           required
         />
+        <p>Valeur du nom d'utilisateur en temps réel : {username}</p>
       </div>
       <div>
         <label htmlFor="password">Mot de passe:</label>
@@ -40,6 +41,7 @@ const LoginForm = () => {
           onChange={handlePasswordChange}
           required
         />
+            <p>Valeur du mot de passe en temps réel : {password}</p>
       </div>
       <button type="submit">Se connecter</button>
     </form>
