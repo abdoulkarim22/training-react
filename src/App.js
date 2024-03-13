@@ -3,19 +3,16 @@ import './App.css';
 import ParentComponent from './components/ParentComponent';
 import Counter from './components/Counter';
 import LoginForm from './components/LoginForm';
-import Page from './components/Page';
-import ProfilePage from './components/ProfilePage';
-import TaskDetailsPage from './components/TaskDetailsPage';
+import Page from './pages/Page';
+import ProfilePage from './pages/ProfilePage';
+
+
 function App() {
-
-
-
-    
   return (
-    <div className="App">
-     <TaskDetailsPage/>
-    </div>
-  );
+    <>
+      <ProfilePage/>
+    </>
+  )
 }
 
-export default App;
+export default App
