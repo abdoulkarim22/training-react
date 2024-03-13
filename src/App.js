@@ -1,13 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
-import Button from './components/button/Button';
+import ParentComponent from './components/ParentComponent';
+import Counter from './components/Counter';
+import LoginForm from './components/LoginForm';
+import Page from './pages/Page';
+import ProfilePage from './pages/ProfilePage';
+import Navbar from './components/Navbar';
+
+
 function App() {
   return (
-    <div className="App">
-    <Button text ={'Acheter'}/>
-    <Button text ={'Vendre'} />
-    </div>
-  );
+    <>
+      <Navbar/>
+    </>
+  )
 }
 
-export default App;
+export default App
