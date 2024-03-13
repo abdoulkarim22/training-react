@@ -5,6 +5,18 @@ import Button from '../components/button/Button'
 
 class ParentComponent extends React.Component {
   render() {
+
+    function handleClick() {
+        
+    }
+    
+
+
+
+
+
+
+
     const data = "donnée du parent";
     return (
       <div>
