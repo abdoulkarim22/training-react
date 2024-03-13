@@ -5,18 +5,18 @@ function Counter() {
 
     const  [compteur, setCount] = useState(0);
 
-    const incrémentation = () =>{
+    const increment = () =>{
         setCount(compteur + 1)
     }
-    const décrémentation = () =>{
+    const decrement = () =>{
         setCount(compteur - 1)
     }
 
   return (
     <>
       <p>{compteur}</p>
-      <button onClick={incrémentation}>incrémentation</button>
-      <button onClick={décrémentation}>décrémentation</button>
+      <button onClick={increment}>increment</button>
+      <button onClick={decrement}>decrement</button>
     </>
   )
 }
