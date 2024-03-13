@@ -9,6 +9,15 @@ function ProfilePage() {
     bio: 'Lorem ipsum dolor sit amet,',
   };
 
+
+  const profileData = {
+    firstName: 'abdoul',
+    lastName: 'karim',
+    username: 'abdoulkarim42',
+    email: 'abdoulkarim42@gmail.com',
+    bio: 'Lorem ipsum dolor sit amet,',
+  };
+
   return (
     <div className="profile-page">
       <h1>Profil de {profileData.username}</h1>
