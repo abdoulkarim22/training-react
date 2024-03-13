@@ -7,7 +7,7 @@ class ParentComponent extends React.Component {
   render() {
 
     function handleClick() {
-        
+        console.log("fonction handleClick du  ParentComponent");
     }
     
 
@@ -21,7 +21,7 @@ class ParentComponent extends React.Component {
     return (
       <div>
         <h2> le composant parent</h2>
-         <ChildComponent data = {data} />
+         <ChildComponent data = {data} handleClick = {handleClick}  />
 
         <Button title = "Premier Bouton" />
         <Button title = "Deuxième Bouton" />
