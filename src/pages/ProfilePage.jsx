@@ -1,6 +1,14 @@
 import React from 'react';
 
 function ProfilePage() {
+  const profileData = {
+    firstName: 'abdoul',
+    lastName: 'karim',
+    username: 'abdoulkarim42',
+    email: 'abdoulkarim42@gmail.com',
+    bio: 'Lorem ipsum dolor sit amet,',
+  };
+
 
   const profileData = {
     firstName: 'abdoul',
